@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão4: Formulário de Cadastro</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h2{
+            text-align: center;
+        }
+        
+              
+        
+        button{
+            margin-left: 230px;
+            margin-top: 10px;
+            font-size: 18px;
+
+        }
+        #ano{
+            width: 100px;
+            height: 20px;                       
+        }
+        #nome{
+            height: 20px;
+            width: 200px;
+        }
+        input{
+            margin-right: 30px;
+        }
+        
+        div{
+            font-size: 18px;
+        }
+        
+
+    </style>
+</head>
+<body>
+<!--
+Peça do usuário; Nome Completo; E-mail;
+Data Nascimento; Sexo; Estado civil;
+Profissão.
+Na 2ª tela exiba:
+Nome Completo
+Idade
+Profissão
+-->
+<div>
+    <form action="questao4.php" method="get">
+        <h2>Formulário de Cadastro</h2>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Informe o seu nome aqui" id="nome" required>
+            <br/>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="email@seuprovedor.com" id="email" required>
+            <br/>
+            <label for="datanasc">Data Nasc.:</label>
+            <input type="date" name="datanasc" id="datanasc" required>
+            <br/>
+            <fieldset>
+            <legend>Sexo:</legend>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="Sexo" id="masc" value="Homem"/ required>
+            <label for="fem">Feminino</label>
+            <input type="radio" name="Sexo" id="fem" value="Mulher"/ required>
+            </fieldset>
+            <label for="estado_civil">Estado Civil:</label>
+            <select name="estado_civil" id="estado_civil">
+            <option value="0">escolha aqui:</option>
+            <option value="1">Casado</option>
+            <option value="2">Solteiro</option>
+            <option value="3">Disvorciado</option>
+            <option value="4">Mora junto</option>
+            </select>
+            <br/>
+            <label for="profissao">Profissão</label>
+            <input type="text" name="profissao" id="profissao" required>
+            
+            
+            </fieldset>
+
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+    
+</body>
+</html>

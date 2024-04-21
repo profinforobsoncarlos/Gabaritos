@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão2: Status - Idade</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h2{
+            text-align: center;
+        }
+        
+              
+        
+        button{
+            margin-left: 230px;
+            margin-top: 10px;
+            font-size: 18px;
+
+        }
+        #ano{
+            width: 100px;
+            height: 20px;                       
+        }
+        #nome{
+            height: 20px;
+            width: 200px;
+        }
+        input{
+            margin-right: 30px;
+        }
+        fieldset{
+            width: 500px;
+        }
+        div{
+            font-size: 18px;
+        }
+        
+
+    </style>
+</head>
+<body>
+<!--
+Crie uma tela onde peça o nome e o ano do usuário,
+calcule a idade e mostre de acordo com a tabela abaixo.
+Criança (1 – 11 anos)
+Adolescente (12-14 anos)
+Jovem (15-18 anos)
+Adulto (19 – 64 anos)
+Idoso ( mais de 65 anos
+-->
+<div>
+    <form action="questao2.php" method="get">
+        <h2>Status - Idade</h2>
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite o seu nome aqui" id="nome" required>
+            
+            <label for="ano">Ano.:</label>
+            <input type="number" name="ano" placeholder="Informe o ano de nascimento" min="0000" max="9999" id="ano" required>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+    
+</body>
+</html>

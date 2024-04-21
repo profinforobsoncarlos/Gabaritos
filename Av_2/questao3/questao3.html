@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão3: Status - Aluno</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h2{
+            text-align: center;
+        }
+        
+              
+        
+        button{
+            margin-left: 230px;
+            margin-top: 10px;
+            font-size: 18px;
+
+        }
+        #ano{
+            width: 100px;
+            height: 20px;                       
+        }
+        #nome{
+            height: 20px;
+            width: 200px;
+        }
+        input{
+            margin-right: 30px;
+        }
+        fieldset{
+            width: 500px;
+        }
+        div{
+            font-size: 18px;
+        }
+        
+
+    </style>
+</head>
+<body>
+<!--
+Crie uma tela onde peça as 4 notas de um aluno e
+calcule a média, em seguida mostre se ele está
+APROVADO, RECUPERAÇÃO OU REPROVADO.
+<=7 Aprovado;
+>=5 e <=6 Recuperação;
+<5 Reprovado.
+-->
+<div>
+    <form action="questao3.php" method="get">
+        <h2>Escola Municipal Sol Nascente <br/> - Média e Situação do aluno - </h2>
+        <fieldset>
+            <label for="aluno">Aluno:</label>
+            <input type="text" name="aluno" placeholder="Nome do Aluno" id="aluno" required>
+            <br/>
+            <p>Informe as Notas:</p>
+            <input type="number" name="n1" placeholder="Digite a N1" min="0" max="10" step="0.01" id="n1" required>
+            <br/>
+            <input type="number" name="n2" placeholder="Digite a N2" min="0" max="10" step="0.01" id="n2" required>
+            <br/>
+            <input type="number" name="n3" placeholder="Digite a N3" min="0" max="10" step="0.01" id="n3" required>
+            <br/>
+            <input type="number" name="n4" placeholder="Digite a N4" min="0" max="10" step="0.01" id="n4" required>
+        </fieldset>
+        <button type="submit">Calcular</button>
+    </form>
+</div>
+    
+</body>
+</html>
