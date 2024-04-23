@@ -53,7 +53,7 @@ Cotação de hoje é R$5,20
         $conversao = $moeda / 5.20;
         echo "<h2>O valor em Real <span>R$". number_format($moeda,2,",",".")."<br> em Dólar hoje é UU$". number_format($conversao,2,",",".")."</h2>";    
     ?>
-        <a href="questao1.html"><button>Voltar</button></a>   
+        <a href="index.html"><button>Voltar</button></a>   
 </div>
     
 </body>
